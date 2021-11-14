@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let day = prompt('nhập số vào đây:');
+        switch (day) {
+            case '1':
+            case '3':
+            case '5':
+            case '7':
+            case '8':
+            case '10':
+            case '12':
+                alert('tháng này 31 ngày');
+                break;
+            case '4':
+            case '6':
+            case '9':
+            case '11':
+                alert('tthangs này có 30 ngày');
+                break;
+            case '2':
+                let year = confirm('năm này có phải là năm nhuận không'); 
+                if (year) {
+                    alert('tháng này có 29 ngày');
+                }else {
+                    alert('tháng này có 28 ngày');
+                }
+                default :
+                    alert('không có tháng nào như vậy');
+        }
+    </script>
+</body>
+</html>
